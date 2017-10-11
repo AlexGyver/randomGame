@@ -21,6 +21,9 @@
 
 int timers[] = {100, 800}; // временные паузы между вспышками, число пауз равно числу "ступеней" в игре
 
+// 0 - если сенсор, 1 - если используется кнопка (кнопка подключается одной ногой в GND, второй в пин D2)
+#define butt_sens 0
+
 #define debug 0         // режим отладки - вывод в порт информации о процессе игры
 //----- НАСТРОЙКИ -----
 
@@ -45,6 +48,8 @@ int wait_time[max_blinks], min_wait[max_blinks], max_wait[max_blinks];
 
 void setup() {
   Serial.begin(9600);
+  if (butt_sens) pinMode(2, INPUT_PULLUP);
+  else pinMode(2, INPUT);
   // настраиваем пины питания как выходы
   pinMode(buzzPin, OUTPUT);
   pinMode(LEDGND, OUTPUT);
@@ -64,7 +69,10 @@ void setup() {
     pinMode(LED[i], OUTPUT);
     digitalWrite(LED[i], 0);
   }
-  attachInterrupt(0, threshold, RISING);     // настраиваем прерывание датчика
+
+  if (butt_sens) attachInterrupt(0, threshold, FALLING);  // настраиваем прерывание если кнопка
+  else attachInterrupt(0, threshold, RISING);             // настраиваем прерывание если сенсор
+
   good_night();                              // сразу спать
 }
 
