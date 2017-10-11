@@ -25,7 +25,7 @@
 
 <a id="chapter-2"></a>
 ## Схема
-![СХЕМА](https://github.com/AlexGyver/AC_Dimmer/blob/master/Schematics%26PCB/dimmer_sch.png)
+![СХЕМА](https://github.com/AlexGyver/randomGame/blob/master/scheme.jpg)
 
 <a id="chapter-3"></a>
 ## Материалы и компоненты
