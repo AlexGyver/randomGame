@@ -29,7 +29,12 @@
 
 <a id="chapter-3"></a>
 ## Материалы и компоненты
-* Arduino NANO http://ali.pub/1qqtjx
+* Arduino NANO http://ali.ski/bFNpU
+* Сенсорная кнопка http://ali.ski/KHXaV
+* Батарейный отсек http://ali.ski/KpbUT
+* Светодиод RGB общий катод http://www.voltmaster.ru/cgi-bin/qwery.pl/id=416425062
+* Резистор 220 Ом
+* Пищалка из компьютера
 
 ## Вам скорее всего пригодится
 * [Всё для пайки (паяльники и примочки)](http://alexgyver.ru/all-for-soldering/)
