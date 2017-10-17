@@ -64,7 +64,6 @@ void setup() {
   digitalWrite(sensGND, 0);
   digitalWrite(sensVCC, 1);
 
-  pinMode(2, INPUT);              // пин датчика касания или кнопка
   for (int i = 0; i < 3; i++) {   // сделать все светодиодные пины выходами и выключить
     pinMode(LED[i], OUTPUT);
     digitalWrite(LED[i], 0);
