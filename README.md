@@ -29,9 +29,9 @@
 
 <a id="chapter-3"></a>
 ## Материалы и компоненты
-* Arduino NANO http://ali.ski/bFNpU
-* Сенсорная кнопка http://ali.ski/KHXaV
-* Батарейный отсек http://ali.ski/KpbUT
+* Arduino NANO https://ali.ski/K3Cdf
+* Сенсорная кнопка https://ali.ski/pksiN
+* Батарейный отсек https://ali.ski/ekTK93
 * Светодиод RGB общий катод http://www.voltmaster.ru/cgi-bin/qwery.pl/id=416425062
 * Резистор 220 Ом
 * Пищалка из компьютера
